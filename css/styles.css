@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: Roboto, sans-serif;
   background-color: #f9f9fd;
@@ -48,8 +53,8 @@ img {
   overflow: hidden;
 }
 
-.container {
-  width: 1120px;
+.tours-container {
+  width: 1128px;
   padding-top: 64px;
   padding-bottom: 64px;
   padding-left: 0;
@@ -65,23 +70,22 @@ img {
   margin-top: -32px;
   margin-left: -32px;
 }
-.tours-list .item {
+.tours-item {
   flex-basis: calc ((100% - 96px) / 4);
   margin-top: 32px;
   margin-left: 32px;
 }
-.tours-list .item:nth-child(4n) {
+.tours-item:nth-child(4n) {
   margin-right: 0;
 }
-.tours-list .card {
-  max-width: 256px;
+.tours-card {
   border: 1px solid #d9d9de;
   border-radius: 6px;
-  overflow: hidden;
 }
-.tours-list .subtitle {
+.tours-subtitle {
   padding-top: 13px;
   padding-left: 19px;
   padding-bottom: 16px;
 }
+/*  */
 /* ====Туры по Байкалу END==== */
